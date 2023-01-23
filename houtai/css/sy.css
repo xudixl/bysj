@@ -1,0 +1,289 @@
+/* 文章与地图 */
+.hotpage_w{
+    width: 100%;
+    margin: 0  auto;
+    background-color:rgba(192, 57, 43,1);
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.article{
+    width: 520px;
+    height: 250px;
+    border-radius: 25px;
+    border: 2px solid rgba(127, 140, 141,1.0);
+    box-shadow: 0px 0px 5px 3px rgba(44, 62, 80,0.3);
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+.arti_page img{
+    width: 522px;
+    height: 252px;
+    transition: 1s;
+}
+.text_arti{
+    width: 225px;
+    height: 210px;
+    position: relative;
+    top: 18px;
+    left: 21px;
+    color: white;
+    line-height: 35px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding-right: 20px;
+}
+.text_arti p{
+    font-size: 14px;
+}
+.map{
+    width: 520px;
+    height: 250px;
+    border-radius: 25px;
+    border: 2px solid rgba(127, 140, 141,1.0);
+    box-shadow: 0px 0px 5px 3px rgba(44, 62, 80,0.3);
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+.arti_tm{
+    width: 520px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+.arti_tm h2{
+    text-align: center;
+    margin-top: -101px;
+    margin-left: 210px;
+    font-size: 30px;
+    color:#CAD3C8;
+}
+.arti_info{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* border-radius: 20px; */
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 370px;
+    margin-top: 40px;
+}
+.arti_info a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.map_page img{
+    transition: 1s;
+}
+.map_tm{
+    width: 520px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+.map_tm h2{
+    text-align: center;
+    margin-top: -101px;
+    margin-left: 210px;
+    color:#CAD3C8;
+}
+.map_info{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* border-radius: 20px; */
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 370px;
+    margin-top: 40px;
+}
+.map_info a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+/* 朝代线 */
+.line_w{
+    width: 100%;
+    margin: 0 auto;
+}
+.line_item{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(194, 54, 22,1.0);
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 重点朝代 */
+.item{
+    box-sizing: border-box;
+    width: 19%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 10px solid black;
+    cursor: pointer;
+}
+.item:nth-of-type(1){
+    border-bottom: 5px solid #ff9f1a;
+}
+.item:nth-of-type(2){
+    border-bottom: 5px solid #ffa801;
+}
+.item:nth-of-type(3){
+    border-bottom: 5px solid #ffaf40;
+}
+.item:nth-of-type(4){
+    border-bottom: 5px solid #ffa801;
+}
+.item:nth-of-type(5){
+    border-bottom: 5px solid #ff9f1a;
+}
+.item a{
+    font-size: 15px;
+ color: white;
+}
+/* .item a:nth-of-type(1){
+    color:  rgba(223, 230, 233,1);
+}
+.item a:nth-of-type(2){
+    color:  rgba(178, 190, 195,1);
+}
+.item a:nth-of-type(3){
+    color: rgba(99, 110, 114,1);
+}
+.item a:nth-of-type(4){
+    color:rgba(34, 47, 62,1);
+}
+.item a:nth-of-type(5){
+    color:  rgba(0, 0, 0,1);
+} */
+/* .first_active{
+    background-color: skyblue;
+} */
+/* 朝代内容 */
+.pic{
+    width: 100%;
+}
+.pic_content{
+    width: 100%;
+    height: 330px;
+    background-color:rgba(192, 57, 43,1);
+    padding-top: 15px;
+    display: none;
+}
+.pic_content ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.pic_info{
+    width: 21%;
+    height: 310px;
+    box-sizing: border-box;
+    /* border: 2px solid black;
+    border-radius: 25px; */
+    overflow: hidden;
+    /* box-shadow: 0px 2px 5px 1px black; */
+    transition: 0.5s;
+}
+.active{
+    display: block;
+}
+.pic_info_tm{
+    width: 100%;
+    height: 312px;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -102%;
+    left: -102%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    transition: 1s;
+}
+.pic_info_tm p{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    line-height: 25px;
+    border-bottom: 1px solid white;
+    width: 80%;
+}
+.pic_info_tm a{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+}
+/* 部分文章阅读 */
+.head_novel{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(194, 54, 22,1.0);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius:15px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+
+}
+.novel_w{
+    width: 100%;
+    background-color: rgb(231 236 238);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.novel_w ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.novel_w ul li{
+    width: 23%;
+    height: 330px;
+   background-color: white;
+   transition: 0.5s;
+}
+.novel_w ul li a{
+    text-decoration: none;
+}
+.novel_w ul li .bg_img{
+    background-image: url(../img/西夏王陵出图的文物雕塑.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+.tag{
+    width: 98.4%;
+    height: 43px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -43px; left: 0;
+    font-size: 14px;
+    color: white;
+    padding:0 3px;
+}
+.novel_w ul li h3{
+    color: black;
+   margin-top: -29px;
+   margin-left: 10px; 
+}
